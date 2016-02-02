@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+#content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.product {
+  overflow: auto;
+  padding: 10px;
+  background-color: #66daff;
+}
+
+.music .selling-points {
+  height: 150px;
+  padding: 10px;
+  padding-left: 160px;
+  width: 320px;
+}
+
+.book .selling-points {
+  height: 224px;
+  padding: 10px;
+  padding-left: 160px;
+  width: 320px;
+}
+
+
+.music .picture {
+  width: 150px;
+  height: 150px;
+  float: left;
+}
+
+.book .picture {
+  width: 150px;
+  height: 224px;
+  float: left;
+}
+
+.name {
+  width: 150px;
+  text-align: center;
+}
+
+.price {
+  text-align: right;
+  width: 150px;
+}
+
+.category {
+  float: left;
+}
