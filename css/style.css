@@ -6,6 +6,11 @@ img {
   width: 100%;
 }
 
+#header {
+  background-color: darkblue;
+  color: white;
+}
+
 #nav {
   background-color: lightblue;
 }
@@ -13,6 +18,11 @@ img {
 #content {
   width: 960px;
   margin: 0 auto;
+}
+
+#footer {
+  font-size: 75%;
+  background-color: cyan;
 }
 
 .product {
