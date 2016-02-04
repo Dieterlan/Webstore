@@ -5,6 +5,7 @@ var book1 = {
   price : 19.99,
   selling_points : "Mice fight off evil forces of evil",
   id : "redwall",
+  class : "book"
 };
 
 var book2 = {
@@ -14,6 +15,7 @@ var book2 = {
   price : 15.99,
   selling_points : "It's a John Green book",
   id : "the-fault-in-our-stars",
+  class : "book"
 };
 
 var album1 = {
@@ -23,6 +25,7 @@ var album1 = {
   price : 7.99,
   selling_points : "Lorem Ipsum",
   id : "year-of-the-gentleman",
+  class : "music"
 };
 
 var album2 = {
@@ -32,9 +35,11 @@ var album2 = {
   price : 6.99,
   selling_points : "Lorem Ipsum",
   id : "purpose",
+  class : "music"
 };
 
 var add_to_page = function(product) {
+  $('#content').append("<div id=\"" + product.id + "\" class=\"" + product.class + product\"><div class=\"name\"></div><div class=\"picture\"></div><div class=\"selling-points\"></div><div class=\"category\"></div><div class=\"price\"></div></div>");
   $('#' + product.id + ' .name').text(product.name);
   $('#' + product.id + ' .picture').html("<img src=\"" + product.picture_url + "\" />");
   $('#' + product.id + ' .category').text(product.category);
