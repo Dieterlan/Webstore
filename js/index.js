@@ -46,3 +46,18 @@ add_to_page(book1);
 add_to_page(book2);
 add_to_page(album1);
 add_to_page(album2);
+
+$('.show-books').on('click', function() {
+  $('.book').show();
+  $('.music').hide();
+});
+
+$('.show-music').on('click', function() {
+  $('.book').hide();
+  $('.music').show();
+});
+
+$('.show-all').on('click', function() {
+  $('.book').show();
+  $('.music').show();
+});
