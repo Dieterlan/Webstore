@@ -39,12 +39,7 @@ var album2 = {
 };
 
 var add_to_page = function(product) {
-  $('#content').append("<div id=\"" + product.id + "\" class=\"" + product.class + product\"><div class=\"name\"></div><div class=\"picture\"></div><div class=\"selling-points\"></div><div class=\"category\"></div><div class=\"price\"></div></div>");
-  $('#' + product.id + ' .name').text(product.name);
-  $('#' + product.id + ' .picture').html("<img src=\"" + product.picture_url + "\" />");
-  $('#' + product.id + ' .category').text(product.category);
-  $('#' + product.id + ' .price').text(product.price);
-  $('#' + product.id + ' .selling-points').text(product.selling_points);
+  $('#content').append("<div id=\"" + product.id + "\" class=\"" + product.class + " product\"><div class=\"name\">" + product.name + "</div><div class=\"picture\"><img src=\"" + product.picture_url + "\" /></div><div class=\"selling-points\">" + product.selling_points + "</div><div class=\"category\">" + product.category +  "</div><div class=\"price\">" + product.price + "</div></div>");
 }
 
 add_to_page(book1);
