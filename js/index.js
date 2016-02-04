@@ -34,26 +34,15 @@ var album2 = {
   id : "purpose",
 };
 
-$('#redwall .name').text(book1.name);
-$('#redwall .picture').html("<img src=\"" + book1.picture_url + "\" />");
-$('#redwall .category').text(book1.category);
-$('#redwall .price').text(book1.price);
-$('#redwall .selling-points').text(book1.selling_points);
+var add_to_page = function(product) {
+  $('#' + product.id + ' .name').text(product.name);
+  $('#' + product.id + ' .picture').html("<img src=\"" + product.picture_url + "\" />");
+  $('#' + product.id + ' .category').text(product.category);
+  $('#' + product.id + ' .price').text(product.price);
+  $('#' + product.id + ' .selling-points').text(product.selling_points);
+}
 
-$('#the-fault-in-our-stars .name').text(book2.name);
-$('#the-fault-in-our-stars .picture').html("<img src=\"" + book2.picture_url + "\" />");
-$('#the-fault-in-our-stars .category').text(book2.category);
-$('#the-fault-in-our-stars .price').text(book2.price);
-$('#the-fault-in-our-stars .selling-points').text(book2.selling_points);
-
-$('#year-of-the-gentleman .name').text(album1.name);
-$('#year-of-the-gentleman .picture').html("<img src=\"" + album1.picture_url + "\" />");
-$('#year-of-the-gentleman .category').text(album1.category);
-$('#year-of-the-gentleman .price').text(album1.price);
-$('#year-of-the-gentleman .selling-points').text(album1.selling_points);
-
-$('#purpose .name').text(album2.name);
-$('#purpose .picture').html("<img src=\"" + album2.picture_url + "\" />");
-$('#purpose .category').text(album2.category);
-$('#purpose .price').text(album2.price);
-$('#purpose .selling-points').text(album2.selling_points);
+add_to_page(book1);
+add_to_page(book2);
+add_to_page(album1);
+add_to_page(album2);
