@@ -74,3 +74,8 @@ $('.show-all').on('click', function() {
   $('.book').show();
   $('.music').show();
 });
+
+$('#nav').on('change', function() {
+  $('.product').hide();
+  $($('select').val()).show();
+});
