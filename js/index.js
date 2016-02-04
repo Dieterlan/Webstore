@@ -57,8 +57,8 @@ for (var type in products)
   {
       add_to_page(products[type][i]);
   }
+  $('select').append("<option value=\"." + products[type][0]["class"] + "\">" + type[0].toUpperCase() + type.slice(1) + "</option>");
 }
-
 
 $('.show-books').on('click', function() {
   $('.book').show();
@@ -74,6 +74,8 @@ $('.show-all').on('click', function() {
   $('.book').show();
   $('.music').show();
 });
+
+
 
 $('#nav').on('change', function() {
   $('.product').hide();
